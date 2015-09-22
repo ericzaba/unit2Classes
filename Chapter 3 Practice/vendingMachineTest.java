@@ -16,8 +16,8 @@ public class vendingMachineTest
     /** description of instance variable x (add comment for each instance variable) */
     
     String name;
-    int numberofSoda;
-    int numberofToken;
+    int numberofSoda = 10;
+    int numberofToken = 0;
     
     /**
      * Default constructor for objects of class vendingMachineTest
@@ -55,7 +55,14 @@ public class vendingMachineTest
         machine.inputToken(numberofSoda, numberofToken);
         System.out.println(numberofToken + " " + numberofSoda);
         machine.inputSoda(numberofSoda);
-        System.out.println(numberofSoda + " " + numberofToken());
+        System.out.println(numberofSoda + " " + numberofToken);
+    
+    }
+    @Test
+    public void inputSodaTest(){
+            vendingMachine machine = new vendingMachine();
+            machine.inputSoda(10);
+            System.out.println(numberofSoda);
     
     }
     

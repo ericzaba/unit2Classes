@@ -52,11 +52,12 @@ public class vendingMachine
      * @param   y   description of parameter y
      * @return  description of the return value
      */
-    public void inputSoda(int numberofSoda)
+    public void inputSoda(int numberOfCans)
     {
-        numberofSoda +=1;
+        numberofSoda +=numberOfCans;
 
     }
+    
 
 
 }
