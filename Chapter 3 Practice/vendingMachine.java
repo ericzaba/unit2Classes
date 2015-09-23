@@ -6,7 +6,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class vendingMachine
+public class VendingMachine
 {
     /** description of instance variable x (add comment for each instance variable) */
     public String name; //name ofr reference
@@ -16,11 +16,12 @@ public class vendingMachine
     /**
      * Default constructor for objects of class vendingMachine
      */
-    public vendingMachine()
+    public VendingMachine()
     {
         String name = "Vending Machine";
         int numberofSoda = 100;
         int numberofToken = 1;
+        int numberofCans = 1;
     }
 
     /**
@@ -32,7 +33,7 @@ public class vendingMachine
      * 
      * @return    number of soda
      */
-    public void inputToken(int numberofSoda, int numberofToken)
+    public void inputToken(int numberofToken)
     {
         numberofToken +=numberofToken;
         numberofSoda -= numberofToken;
@@ -42,16 +43,16 @@ public class vendingMachine
 
 
 
-    public void inputSoda(int numberOfCans)
+    public void inputSoda(int numberofCans)
     {
-        numberofSoda +=numberOfCans;
+        numberofSoda +=numberofCans;
 
     }
-    public int getnumberofSoda(int numberofSoda){
+    public int getnumberofSoda(){
         return numberofSoda;
     
     }
-    public int getnumberofToken(int numberofToken){
+    public int getnumberofToken(){
         return numberofToken;
     }
 
