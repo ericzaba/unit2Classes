@@ -9,10 +9,10 @@
 public class vendingMachine
 {
     /** description of instance variable x (add comment for each instance variable) */
-    public String name;
-    public int numberofSoda;
-    public int numberofToken;
-
+    public String name; //name ofr reference
+    public int numberofSoda; //numbero of soda filled cans
+    public int numberofToken; //number of tokens in machine
+    public int numberofCans; //number of cans to be inputted to machine
     /**
      * Default constructor for objects of class vendingMachine
      */
@@ -20,7 +20,7 @@ public class vendingMachine
     {
         String name = "Vending Machine";
         int numberofSoda = 100;
-        int numberofToken = 0;
+        int numberofToken = 1;
     }
 
     /**
@@ -34,30 +34,26 @@ public class vendingMachine
      */
     public void inputToken(int numberofSoda, int numberofToken)
     {
-        numberofToken +=1;
-        numberofSoda -= 1;
+        numberofToken +=numberofToken;
+        numberofSoda -= numberofToken;
         
     }
 
 
 
-    /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
-     *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
-     */
+
     public void inputSoda(int numberOfCans)
     {
         numberofSoda +=numberOfCans;
 
     }
+    public int getnumberofSoda(int numberofSoda){
+        return numberofSoda;
     
+    }
+    public int getnumberofToken(int numberofToken){
+        return numberofToken;
+    }
 
 
 }
