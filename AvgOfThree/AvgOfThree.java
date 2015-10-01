@@ -8,6 +8,7 @@ public class AvgOfThree
        double a, b, c;
 
       System.out.print ("Enter the first number: ");
+      
       a = s.nextDouble();
 
       System.out.print ("Enter the second number: ");
@@ -17,7 +18,8 @@ public class AvgOfThree
       c = s.nextDouble();
 
       // compute the average of the three numbers
-
+      
+      
       double avg = (a + b + c) / 3;
       
       System.out.println ("average " + avg);
