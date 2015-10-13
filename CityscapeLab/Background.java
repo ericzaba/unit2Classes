@@ -1,4 +1,8 @@
-
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import javax.swing.JComponent;
+import java.awt.Rectangle;
+import java.awt.Color;
 
 /**
  * Write a description of class Background here.
@@ -10,31 +14,42 @@ public class Background
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
+    private int y;
 
     /**
      * Default constructor for objects of class Background
      */
-    public Background()
+    public Background(int x, int y)
     {
-        // initialise instance variables
-        x = 0;
+        
+        
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Method that draws background with default values that cant be changed
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @pre n/a
+     * @post 
+     * @param graphics engine
+     * @return n/a
      */
-    public int sampleMethod(int y)
+    public void draw(Graphics2D g2)
+        
     {
-        // put your code here
-        return x+y;
+        Color marsRed = new Color(180, 92, 56);
+        Color marsSky = new Color(222, 184, 129);
+        
+        
+        g2.setColor(marsRed);
+        int x = 10;
+        int y = 10;
+        
+        g2.drawRect(0, 400, 800, 200);
+        g2.fillRect(0, 400, 800, 200);
+        
+        g2.setColor(marsSky);
+        g2.drawRect(0, 0, 800, 400);
+        g2.fillRect(0, 0, 800, 400);
     }
 
 }
